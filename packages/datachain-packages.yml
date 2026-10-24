@@ -1,0 +1,23 @@
+generated: '2026-10-24'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io)
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (datachain.ai,
+  security/datachain-domain-security.yml) or its accepted GitHub org.'
+packages:
+- name: datachain
+  registry: pypi
+  url: https://pypi.org/project/datachain/
+  language: Python
+  official: true
+  version: 0.62.0
+  published: '2026-10-21'
+  evidence: metadata names datachain.ai
+- name: datachain
+  registry: npm
+  url: https://www.npmjs.com/package/datachain
+  language: JavaScript
+  official: false
+  version: 0.0.1-security
+  published: '2017-10-27'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'

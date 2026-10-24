@@ -1,0 +1,18 @@
+generated: '2026-10-24'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.datachain.ai/docs/studio/webhooks
+sources:
+- https://www.datachain.ai/docs/studio/webhooks
+description: DataChain Studio webhooks deliver events via HTTP POST to a configured URL. Each delivery includes a secret you define, which can
+  be used to validate the request, and the event type is indicated in the `http-x-datachain-event` header. SSL verification is enabled by default.
+  The documentation does not specify a retry policy.
+events:
+- event: JOB
+  description: Sent whenever any job is created or its status changes, with a payload containing the job details and a `job_status` action.
+- event: PING
+  description: Sent when you add a webhook to a team to test the delivery, containing a simple success message.
+delivery:
+  signature: A secret string you provide is used to validate incoming requests; the documentation does not describe a specific signature header
+    format.
+docs: https://www.datachain.ai/docs/studio/webhooks

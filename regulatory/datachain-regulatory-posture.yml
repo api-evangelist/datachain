@@ -1,0 +1,52 @@
+generated: '2026-10-24'
+method: probed
+source: https://www.datachain.ai/privacy-policy
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://www.datachain.ai/privacy-policy
+        http_status: 200
+        fetched: privacy_policy.txt
+        quote: "The right to request. Under CCPA, You have the right to request that We disclose information to You about Our collection, use, sale, disclosure for business purposes and share of personal information."
+        section: "Consumer Rights"
+    note: Provides data subject access request rights under CCPA.
+  data_retention:
+    evidence:
+      - source: https://www.datachain.ai/privacy-policy
+        http_status: 200
+        fetched: privacy_policy.txt
+        quote: "If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy."
+        section: "Data Transfer"
+    note: Mentions retention during corporate changes.
+  incident_notification:
+    evidence:
+      - source: https://www.datachain.ai/privacy-policy
+        http_status: 200
+        fetched: privacy_policy.txt
+        quote: "We may deny Your deletion request if retaining the information is necessary for Us or Our Service Providers to: Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity, or prosecute those responsible for such activities."
+        section: "Deletion Exceptions"
+    note: Indicates notification obligations for security incidents.
+  right_to_delete:
+    evidence:
+      - source: https://www.datachain.ai/privacy-policy
+        http_status: 200
+        fetched: privacy_policy.txt
+        quote: "The right to delete Personal Data. You have the right to request the deletion of Your Personal Data, subject to certain exceptions."
+        section: "Deletion Rights"
+    note: Grants right to erasure with exceptions.
+  opt_out_sale:
+    evidence:
+      - source: https://www.datachain.ai/privacy-policy
+        http_status: 200
+        fetched: privacy_policy.txt
+        quote: "The right to say no to the sale of Personal Data (opt-out). You have the right to direct Us to not sell Your personal information."
+        section: "Consumer Rights"
+    note: Provides opt‑out of data sale under CCPA.
+  non_discrimination:
+    evidence:
+      - source: https://www.datachain.ai/privacy-policy
+        http_status: 200
+        fetched: privacy_policy.txt
+        quote: "You have the right not to be discriminated against for exercising any of Your consumer rights, including by: Denying goods or services to You; Charging different prices or rates for goods or services..."
+        section: "Consumer Rights"
+    note: Guarantees non‑discrimination for exercising privacy rights.
